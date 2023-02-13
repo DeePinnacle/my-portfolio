@@ -2,16 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    overflow: hidden;
+body, *{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .hideNavbar {
-    margin-right: -500px;
+    position: absolute;
+    right: -100%;
     transition: all ease-in 0.5s;
+
 }
 .showNavbar{
-    margin-right: 0px;
-    transition: all ease-in 0.5s;
+    position: absolute;
+    right: 0;
+    transition: all ease-in .5s;
+    /* animation: slideDown 0.5s linear; */
+    overflow: hidden;
 }
 .anchor{
     @apply text-white block p-6 text-xl font-extralight hover:bg-zinc-900;
@@ -19,4 +27,13 @@ body{
 }
 .anchor:hover{
     @apply bg-zinc-900;
+}
+
+@keyframes slideDown {
+   0%{
+        opacity: 0;
+   }
+   100%{
+        opacity: 1;
+   } 
 }
