@@ -13,3 +13,10 @@ body{
     margin-right: 0px;
     transition: all ease-in 0.5s;
 }
+.anchor{
+    @apply text-white block p-6 text-xl font-extralight hover:bg-zinc-900;
+    transition: all ease-in 0.6s;
+}
+.anchor:hover{
+    @apply bg-zinc-900;
+}
