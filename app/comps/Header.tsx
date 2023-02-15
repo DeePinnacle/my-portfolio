@@ -2,6 +2,7 @@
 import Burger from "./Burger";
 import Logo from "./logo";
 import Navbar from "./Navbar";
+import HeroPage from '../heroPage/page'
 import { useState } from 'react';
 const Header = () => {
 
@@ -13,7 +14,7 @@ const Header = () => {
         setToggle(!toggle);
     } 
     return ( 
-        <header>
+        <header className="relative w-full min-h-0">
             {/* logo/burger */}
             <div className="w-full p-5 bg-zinc-800 flex flex-row align-middle justify-between">
                 <Logo />
@@ -30,7 +31,9 @@ const Header = () => {
                 </div>
             </div>
             {/* Logo and link  */}
-            
+            <div className="w-full">
+                <HeroPage />
+            </div>
         </header>
      );
 }

@@ -2,19 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-body, *{
-    overflow-x: hidden;
+*{
+    overflow: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .hideNavbar {
     position: absolute;
     right: -100%;
+    z-index: 1000;
     transition: all ease-in 0.5s;
 
 }
 .showNavbar{
+    display: block;
     position: absolute;
     right: 0;
     transition: all ease-in .5s;
@@ -27,6 +30,9 @@ body, *{
 }
 .anchor:hover{
     @apply bg-zinc-900;
+}
+.header-height{
+    min-height: 100px;
 }
 
 @keyframes slideDown {
