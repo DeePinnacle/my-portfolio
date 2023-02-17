@@ -17,7 +17,7 @@ const HeroPage = ({}: Props) => {
     })
 
     return ( 
-        <div className='h-full grid items-center justify-center overflow-hidden'>
+        <div className='h-full grid bg-zinc-900 items-center justify-center py-100 overflow-hidden'>
             <div className='p-5'>
                 <div className="relative overflow-hidden bg-zinc-800 p-5 mb-6 flex justify-center items-center rounded-full w-60 h-60 mx-auto">
                     <Image src={ MyImage } fill={ true } style={{objectFit: "cover"}}  alt="header image" />   

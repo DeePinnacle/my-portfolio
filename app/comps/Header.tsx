@@ -16,7 +16,7 @@ const Header = () => {
     return ( 
         <header className="relative w-full min-h-0">
             {/* logo/burger */}
-            <div className="w-full p-5 bg-zinc-800 flex flex-row align-middle justify-between">
+            <div className="w-full p-6 mb-9 bg-zinc-800 flex flex-row align-middle justify-between">
                 <Logo />
                 <Burger handleDropdown = {handleDropdown}/>
             </div>

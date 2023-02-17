@@ -11,6 +11,7 @@
 
 .hideNavbar {
     position: absolute;
+    top: 11%;
     right: -100%;
     z-index: 1000;
     transition: all ease-in 0.5s;
@@ -19,6 +20,7 @@
 .showNavbar{
     display: block;
     position: absolute;
+    top: 11%;
     right: 0;
     transition: all ease-in .5s;
     /* animation: slideDown 0.5s linear; */
@@ -34,7 +36,12 @@
 .header-height{
     min-height: 100px;
 }
-
+.py-100{
+    padding-bottom: 180px;
+}
+.gen-container{
+    padding: 50px;
+}
 @keyframes slideDown {
    0%{
         opacity: 0;
