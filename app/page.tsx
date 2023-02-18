@@ -1,6 +1,7 @@
 import Header from '../app/comps/Header'
 import HeroPage from '../app/heroPage/page'
 import About from '../app/about/page'
+import Skills from '../app/skills/page'
 // import Particles from '../app/comps/Particles'
 export default function Home() {
   return (
@@ -12,9 +13,13 @@ export default function Home() {
 
       {/* About section */}
       <div className='w-full box-border'>
-        <h1 className="uppercase text-zinc-800 text-center text-7xl font-extralight mb-4">About</h1>
         <About />
-      </div>  
+      </div> 
+
+       {/*  */}
+      <div className='w-full'>
+        <Skills />
+      </div>
     </main>
   )
 }
