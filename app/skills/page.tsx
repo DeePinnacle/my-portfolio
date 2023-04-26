@@ -32,7 +32,7 @@ const Skills = () => {
             <div className="p-2 bg-zinc-800">
                 {/* devicon container */}
                 <div className="p-2 grid grid-cols-2 gap-y-2.5 gap-x-2.5 place-content-center place-items-center">
-                    <Html5Original size={80}/>
+                    <Html5Original size={80} />
                     <JavascriptOriginal size={80} />
                     <Css3Original size={80} />
                     <TailwindcssOriginalWordmark size={80} />
